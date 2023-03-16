@@ -21,6 +21,7 @@ requete2 = "CREATE TABLE IF NOT EXISTS table_hash(id_hash INTEGER PRIMARY KEY AU
 cur.execute(requete2)
 conn.commit()
 
+
 noms = []
 for row in cur.execute("SELECT nom_commande FROM table_commande"):
     nom = row
